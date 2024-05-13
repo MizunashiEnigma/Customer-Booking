@@ -29,7 +29,7 @@ namespace DataManagement
                         db.SaveChanges();
 
                         transaction.Commit();
-                        Console.WriteLine("Movies added successfully.");
+                        Console.WriteLine("Customers added successfully.");
                     }
                     catch (Exception ex)
                     {

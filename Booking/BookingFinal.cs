@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Booking
 {
-    public class Booking
+    public class Bookings
     {
         public int BookingId { get; set; }
         public DateTime BookingDate { get; set; }
@@ -24,11 +24,11 @@ namespace Booking
         public string ContactNumber { get; set; }
 
         //customer has many bookings
-        public ICollection<Booking> Bookings { get; set; }
+        public ICollection<Bookings> Bookings { get; set; }
 
         public Customer()
         {
-            Bookings = new List<Booking>();
+            Bookings = new List<Bookings>();
         }
       
     }
@@ -38,7 +38,7 @@ namespace Booking
 
         public BookingFinal() : this("OODExam_TristanCawley") { }
 
-        public DbSet<Booking> Bookings { get; set;}
+        public DbSet<Bookings> Bookings { get; set;}
         public DbSet<Customer> Customers { get; set; }
     }
 

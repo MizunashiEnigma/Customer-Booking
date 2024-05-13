@@ -20,9 +20,25 @@ namespace Booking
     /// </summary>
     public partial class MainWindow : Window
     {
+        private BookingFinal db;
         public MainWindow()
         {
             InitializeComponent();
+            db = new BookingFinal();
+            LoadBooking();
+        }
+
+        private void LoadBooking()
+        {
+            try
+            {
+                var bookings = db.Bookings.ToList();
+                lbx_BookingDetailsList.ItemsSource = bookings;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Displaying Customer Bookings : " + ex.Message);
+            }
         }
 
     }
