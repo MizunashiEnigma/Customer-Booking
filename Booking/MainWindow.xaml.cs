@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using static May2024Exam.BookingFinal;
+using May2024Exam;
+using Booking;
 namespace May2024Exam
 {
     /// <summary>
@@ -65,8 +67,15 @@ namespace May2024Exam
 
         private void btn_CustomerSearch_Click(object sender, RoutedEventArgs e)
         {
-            var addBooking = new Bookings(); //intialize the customersearchresult
+            var addBooking = new CustomerSearchResults(); //intialize the customersearchresult
+            addBooking.Closed += AddBooking_Closed;
+            addBooking.Show();
 
+        }
+
+        private void AddBooking_Closed(object sender, EventArgs e)
+        {
+            LoadBooking(); // Refresh the list of properties when AddBooking is closed
         }
     }
 }

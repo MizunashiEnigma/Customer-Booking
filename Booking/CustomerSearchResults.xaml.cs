@@ -18,7 +18,7 @@ namespace Booking
     /// <summary>
     /// Interaction logic for CustomerSearchResults.xaml
     /// </summary>
-    public partial class CustomerSearchResults : Page
+    public partial class CustomerSearchResults : Window
     {
         public CustomerSearchResults()
         {
