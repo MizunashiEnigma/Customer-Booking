@@ -32,7 +32,11 @@ namespace May2024Exam
         {
             Bookings = new List<Bookings>();
         }
-      
+        public override string ToString()
+        {
+            return $"{Name} ({ContactNumber}) - Party of {Bookings}";
+        }
+
     }
     public class BookingFinal : DbContext
     {

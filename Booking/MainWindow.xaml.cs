@@ -34,7 +34,7 @@ namespace May2024Exam
             try
             {
                 var bookings = db.Bookings.ToList();
-                lbx_BookingDetailsList.ItemsSource = bookings;
+                lbx_BookingDetailsList.ItemsSource = bookings.ToString();
             }
             catch (Exception ex)
             {
@@ -61,6 +61,12 @@ namespace May2024Exam
                 {
                 }
             }
+        }
+
+        private void btn_CustomerSearch_Click(object sender, RoutedEventArgs e)
+        {
+            var addBooking = new Bookings(); //intialize the customersearchresult
+
         }
     }
 }

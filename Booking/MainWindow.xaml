@@ -26,7 +26,7 @@
         <TextBox x:Name="tbx_CustomerName" Grid.Row="1" Grid.Column="1" Height="25" Width="105" Margin="35,148,90,174" Text="Customer Name"></TextBox>
         <TextBox x:Name="tbx_ContactNumber" Grid.Row="1" Grid.Column="1" Height="25" Width="105" Margin="35,198,90,124" Text="Contact Number"></TextBox>
 
-        <Button x:Name="btn_CustomerSearch" Grid.Column="1" Grid.Row="1" Height="25" Width="155" Margin="62,247,62,75" Content="Customer Search"></Button>
+        <Button x:Name="btn_CustomerSearch" Grid.Column="1" Grid.Row="1" Height="25" Width="155" Margin="62,247,62,75" Content="Customer Search" Click="btn_CustomerSearch_Click"></Button>
         <Button x:Name="btn_DeleteBooking" Grid.Column="0" Grid.Row="1" Height="25" Width="155" Margin="342,316,22,6" Content="Delete Booking"></Button>
         <!--TODO The Capacity and Bookings and the result of those things being displayed-->
         <TextBox HorizontalAlignment="Left" Margin="118,318,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>

@@ -1,0 +1,33 @@
+﻿<Page x:Class="Booking.CustomerSearchResults"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Booking"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CustomerSearchResults">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Height="25" Width="155" HorizontalAlignment="Left" Text="Matching Customers" FontSize="16"></TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1" Height="25" Width="155" HorizontalAlignment="Left" Text="Matching Customers" FontSize="16"></TextBlock>
+
+        <ListBox Grid.Row="1" Grid.Column="0" Height="275" VerticalAlignment="Top" ItemTemplate="{StaticResource ResourceKey= dataTemplateCustomers}"></ListBox>
+
+        <TextBox Grid.Row="1" Grid.Column="1" Height="25" Width="255" Margin="72,51,72,329"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="25" Width="255" Margin="72,113,72,268"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="1" Height="25" Width="255" Text="Date of Booking :"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" Height="25" Width="255" Text="Number of Customers :" Margin="72,220,72,160"></TextBlock>
+
+        <Button Grid.Column="1" Grid.Row="1" Height="45" Width="155" Margin="122,350,122,10" Content="Create Booking"></Button>
+    </Grid>
+</Page>
