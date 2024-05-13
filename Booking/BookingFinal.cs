@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Booking
+namespace May2024Exam
 {
     public class Bookings
     {
@@ -15,6 +15,8 @@ namespace Booking
 
         //booking has one customer
         public virtual Customer Customer { get; set; }
+
+
     }
 
     public class Customer

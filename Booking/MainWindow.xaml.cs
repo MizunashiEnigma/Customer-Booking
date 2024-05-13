@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Booking
+using static Booking.BookingFinal;
+namespace May2024Exam
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -41,5 +42,27 @@ namespace Booking
             }
         }
 
+        private void lbx_BookingDetailsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedBooking = lbx_BookingDetailsList.SelectedItem as Customer;
+            if(selectedBooking != null)
+            {
+                var 
+            }
+        }
+
+        private void DatePickerBookingDetail_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedBooking = lbx_BookingDetailsList.SelectedItem as Customer;
+            if(selectedBooking != null && DatePickerBookingDetail.SelectedDate.HasValue)
+            {
+                var selectedDate = DatePickerBookingDetail.SelectedDate.Value.Date;
+                var booking = db.Bookings.FirstOrDefault(b => BookingDate.Date == selectedDate);
+                if(booking != null)
+                {
+                    tbx_Capacity.Text = 
+                }
+            }
+        }
     }
 }

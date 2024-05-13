@@ -1,4 +1,4 @@
-﻿<Window x:Class="Booking.MainWindow"
+﻿<Window x:Class="May2024Exam.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -16,9 +16,9 @@
             <RowDefinition Height="80*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock x:Name="tblk_BookingDetail" Grid.Row="0" Grid.Column="0" Width="200" Height="35" HorizontalAlignment="Left" Text="Booking Details" TextAlignment="Justify" FontSize="25" FontWeight="Bold"></TextBlock>
-        <DatePicker x:Name="DatePickerBookingDetail" Grid.Row="0" Grid.Column="0" Width="105" Height="25" HorizontalAlignment="Center"></DatePicker>
+        <DatePicker x:Name="DatePickerBookingDetail" Grid.Row="0" Grid.Column="0" Width="105" Height="25" HorizontalAlignment="Center" SelectedDateChanged="DatePickerBookingDetail_SelectedDateChanged"></DatePicker>
 
-        <ListBox x:Name="lbx_BookingDetailsList" Grid.Row="1" Grid.Column="0" Width="475" Height="275" Padding="10"></ListBox>
+        <ListBox x:Name="lbx_BookingDetailsList" Grid.Row="1" Grid.Column="0" Width="475" Height="275" Padding="10" SelectionChanged="lbx_BookingDetailsList_SelectionChanged"></ListBox>
 
         <TextBlock x:Name="tblk_NewBooking" Grid.Row="0" Grid.Column="1" Text="New Booking" FontSize="25" FontWeight="Bold" ></TextBlock>
         <DatePicker x:Name="datePicker_newBookDate" Grid.Row="1" Grid.Column="1" Width="105" Height="25" Margin="35,36,140,276"></DatePicker>
@@ -29,5 +29,6 @@
         <Button x:Name="btn_CustomerSearch" Grid.Column="1" Grid.Row="1" Height="25" Width="155" Margin="62,247,62,75" Content="Customer Search"></Button>
         <Button x:Name="btn_DeleteBooking" Grid.Column="0" Grid.Row="1" Height="25" Width="155" Margin="342,316,22,6" Content="Delete Booking"></Button>
         <!--TODO The Capacity and Bookings and the result of those things being displayed-->
+        <TextBox HorizontalAlignment="Left" Margin="118,318,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

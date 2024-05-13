@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking", "Booking\Booking.csproj", "{2DEDA0E4-8120-40CF-9A2F-839FEA3294CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "May2024Exam", "Booking\May2024Exam.csproj", "{2DEDA0E4-8120-40CF-9A2F-839FEA3294CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement", "DataManagement\DataManagement.csproj", "{24A2C23B-EA9A-4292-AEAF-F32B81E30EA3}"
 EndProject
