@@ -28,5 +28,6 @@
 
         <Button x:Name="btn_CustomerSearch" Grid.Column="1" Grid.Row="1" Height="25" Width="155" Margin="62,247,62,75" Content="Customer Search"></Button>
         <Button x:Name="btn_DeleteBooking" Grid.Column="0" Grid.Row="1" Height="25" Width="155" Margin="342,316,22,6" Content="Delete Booking"></Button>
+        <!--TODO The Capacity and Bookings and the result of those things being displayed-->
     </Grid>
 </Window>

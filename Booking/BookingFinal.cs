@@ -13,6 +13,7 @@ namespace Booking
         public DateTime BookingDate { get; set; }
         public int NumberOfParticipants { get; set; }
 
+        //booking has one customer
         public virtual Customer Customer { get; set; }
     }
 
@@ -22,6 +23,7 @@ namespace Booking
         public string Name { get; set; }
         public string ContactNumber { get; set; }
 
+        //customer has many bookings
         public ICollection<Booking> Bookings { get; set; }
 
         public Customer()
