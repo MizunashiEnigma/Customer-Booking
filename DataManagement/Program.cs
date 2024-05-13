@@ -5,6 +5,7 @@ using May2024Exam;
 
 namespace DataManagement
 {
+    //badImageExecption Y???
     internal class Program
     {
         static void Main(string[] args)
