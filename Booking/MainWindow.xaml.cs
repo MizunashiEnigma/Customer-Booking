@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using static Booking.BookingFinal;
+using static May2024Exam.BookingFinal;
 namespace May2024Exam
 {
     /// <summary>
@@ -47,7 +47,6 @@ namespace May2024Exam
             var selectedBooking = lbx_BookingDetailsList.SelectedItem as Customer;
             if(selectedBooking != null)
             {
-                var 
             }
         }
 
@@ -57,10 +56,9 @@ namespace May2024Exam
             if(selectedBooking != null && DatePickerBookingDetail.SelectedDate.HasValue)
             {
                 var selectedDate = DatePickerBookingDetail.SelectedDate.Value.Date;
-                var booking = db.Bookings.FirstOrDefault(b => BookingDate.Date == selectedDate);
+                var booking = db.Bookings;
                 if(booking != null)
                 {
-                    tbx_Capacity.Text = 
                 }
             }
         }
